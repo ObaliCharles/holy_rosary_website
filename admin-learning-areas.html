@@ -378,11 +378,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5">
-                <div class="admin-card mt-30">
-                    <h4>Curriculum Update</h4>
-                    <form class="admin-form">
-                        <input class="admin-input" type="text" placeholder="Update title">
+                <div class="col-lg-5">
+                    <div class="admin-card mt-30">
+                        <h4>Curriculum Update</h4>
+                        <form class="admin-form">
+                            <input class="admin-input" type="text" placeholder="Update title">
                         <select class="admin-select">
                             <option>Learning area</option>
                             <option>Literacy</option>
@@ -394,14 +394,56 @@
                         <textarea class="admin-textarea" placeholder="Summary of changes"></textarea>
                     </form>
                     <div class="admin-hero-actions">
-                        <a href="#learning-publish" class="main-btn">Publish Update</a>
-                        <a href="#learning-publish" class="main-btn main-btn--outline">Save Draft</a>
+                        <a href="#learning-updates" class="main-btn">Publish Update</a>
+                        <a href="#learning-updates" class="main-btn main-btn--outline">Save Draft</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="admin-card mt-30" id="learning-updates">
+                        <div class="admin-card-head">
+                            <h4>Recent Curriculum Updates</h4>
+                            <span class="admin-pill"><i class="fa fa-bell"></i> Latest releases</span>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="admin-table">
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Learning Area</th>
+                                        <th>Status</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Literacy Term 1 Benchmarks</td>
+                                        <td>Literacy</td>
+                                        <td><span class="admin-badge admin-badge--success">Published</span></td>
+                                        <td>Mar 15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Numeracy Weekly Drills</td>
+                                        <td>Numeracy</td>
+                                        <td><span class="admin-badge admin-badge--info">Shared</span></td>
+                                        <td>Mar 14</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Science Practical Safety</td>
+                                        <td>Science</td>
+                                        <td><span class="admin-badge admin-badge--warning">Draft</span></td>
+                                        <td>Mar 13</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 <!--====== ADMIN LEARNING AREAS PART ENDS ======-->
    
     <!--====== ADMIN ACTIONS PART START ======-->
@@ -429,7 +471,7 @@
                     <h4>Share Targets</h4>
                     <p>Communicate literacy, numeracy, and values goals with teams.</p>
                     <div class="admin-hero-actions">
-                        <a href="#learning-share" class="main-btn">Send Update</a>
+                        <a href="#learning-updates" class="main-btn">Send Update</a>
                     </div>
                 </div>
             </div>
