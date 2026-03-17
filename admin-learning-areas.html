@@ -220,6 +220,27 @@
     
     <!--====== PAGE BANNER PART ENDS ======-->
 
+
+    <!--====== ADMIN NAV PART START ======-->
+    <section class="admin-nav">
+        <div class="container">
+            <div class="admin-nav-inner">
+                <a href="admin-dashboard.html" class="admin-nav-link">Overview</a>
+                <a href="admin-admissions.html" class="admin-nav-link">Admissions</a>
+                <a href="admin-learning-areas.html" class="admin-nav-link is-active">Learning Areas</a>
+                <a href="admin-staff.html" class="admin-nav-link">Staff</a>
+                <a href="admin-news.html" class="admin-nav-link">News</a>
+                <a href="admin-gallery.html" class="admin-nav-link">Gallery</a>
+                <a href="admin-resources.html" class="admin-nav-link">Resources</a>
+                <a href="admin-calendar.html" class="admin-nav-link">Calendar</a>
+                <a href="admin-messages.html" class="admin-nav-link">Messages</a>
+                <a href="admin-parent-support.html" class="admin-nav-link">Parent Support</a>
+            </div>
+        </div>
+    </section>
+    <!--====== ADMIN NAV PART ENDS ======-->
+
+
     <!--====== ADMIN LEARNING AREAS PART START ======-->
 <section id="admin-learning-areas" class="pt-70 pb-120 gray-bg admin-dashboard">
     <div class="container">
@@ -248,8 +269,8 @@
                     <h5>Literacy and English</h5>
                     <p>Reading circles, vocabulary goals, and writing benchmarks.</p>
                     <div class="admin-module-actions">
-                        <a href="#">Edit Plan</a>
-                        <a href="#">Share Targets</a>
+                        <a href="#learning-edit">Edit Plan</a>
+                        <a href="#learning-share">Share Targets</a>
                     </div>
                 </div>
             </div>
@@ -259,8 +280,8 @@
                     <h5>Numeracy and Math</h5>
                     <p>Daily drills, mastery checks, and remedial support.</p>
                     <div class="admin-module-actions">
-                        <a href="#">Edit Plan</a>
-                        <a href="#">Assign Coach</a>
+                        <a href="#learning-edit">Edit Plan</a>
+                        <a href="#learning-coach">Assign Coach</a>
                     </div>
                 </div>
             </div>
@@ -270,8 +291,8 @@
                     <h5>Science and Environment</h5>
                     <p>Practical activities, lab safety, and environment projects.</p>
                     <div class="admin-module-actions">
-                        <a href="#">Edit Plan</a>
-                        <a href="#">Schedule Lab</a>
+                        <a href="#learning-edit">Edit Plan</a>
+                        <a href="#learning-activity">Schedule Lab</a>
                     </div>
                 </div>
             </div>
@@ -281,8 +302,8 @@
                     <h5>Social Studies</h5>
                     <p>Community history, citizenship, and cultural heritage.</p>
                     <div class="admin-module-actions">
-                        <a href="#">Edit Plan</a>
-                        <a href="#">Plan Visit</a>
+                        <a href="#learning-edit">Edit Plan</a>
+                        <a href="#learning-activity">Plan Visit</a>
                     </div>
                 </div>
             </div>
@@ -292,8 +313,8 @@
                     <h5>Creative Arts</h5>
                     <p>Music, dance, drama, and visual arts showcases.</p>
                     <div class="admin-module-actions">
-                        <a href="#">Edit Plan</a>
-                        <a href="#">Book Venue</a>
+                        <a href="#learning-edit">Edit Plan</a>
+                        <a href="#learning-activity">Book Venue</a>
                     </div>
                 </div>
             </div>
@@ -303,8 +324,8 @@
                     <h5>Religion and Values</h5>
                     <p>Faith formation, service, and character formation goals.</p>
                     <div class="admin-module-actions">
-                        <a href="#">Edit Plan</a>
-                        <a href="#">Share Reflection</a>
+                        <a href="#learning-edit">Edit Plan</a>
+                        <a href="#learning-share">Share Reflection</a>
                     </div>
                 </div>
             </div>
@@ -373,8 +394,8 @@
                         <textarea class="admin-textarea" placeholder="Summary of changes"></textarea>
                     </form>
                     <div class="admin-hero-actions">
-                        <a href="#" class="main-btn">Publish Update</a>
-                        <a href="#" class="main-btn main-btn--outline">Save Draft</a>
+                        <a href="#learning-publish" class="main-btn">Publish Update</a>
+                        <a href="#learning-publish" class="main-btn main-btn--outline">Save Draft</a>
                     </div>
                 </div>
             </div>
@@ -383,6 +404,68 @@
 </section>
 <!--====== ADMIN LEARNING AREAS PART ENDS ======-->
    
+    <!--====== ADMIN ACTIONS PART START ======-->
+<section id="learning-actions" class="pt-70 pb-120 admin-dashboard">
+    <div class="container">
+        <div class="admin-page-head">
+            <div>
+                <h3>Learning Area Actions</h3>
+                <p>Focus on planning, coaching, and activity coordination for every subject area.</p>
+            </div>
+            <span class="admin-pill"><i class="fa fa-book"></i> Action center</span>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="admin-card" id="learning-edit">
+                    <h4>Edit Learning Plans</h4>
+                    <p>Update weekly plans, target outcomes, and class focus areas.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#admin-learning-areas" class="main-btn main-btn--outline">Back to modules</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="admin-card" id="learning-share">
+                    <h4>Share Targets</h4>
+                    <p>Communicate literacy, numeracy, and values goals with teams.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#learning-share" class="main-btn">Send Update</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="admin-card" id="learning-coach">
+                    <h4>Assign Coaches</h4>
+                    <p>Match mentors to teachers and set coaching milestones.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#learning-coach" class="main-btn">Assign Coach</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="admin-card" id="learning-activity">
+                    <h4>Plan Activities</h4>
+                    <p>Schedule labs, field visits, arts sessions, and showcases.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#learning-activity" class="main-btn">Create Activity</a>
+                        <a href="#learning-activity" class="main-btn main-btn--outline">Reserve Space</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="admin-card" id="learning-publish">
+                    <h4>Publish Curriculum Updates</h4>
+                    <p>Release updates to staff with clear next steps and timelines.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#curriculum" class="main-btn">View Calendar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== ADMIN ACTIONS PART ENDS ======-->
+
     <!--====== FOOTER PART START ======-->
     
     <footer id="footer-part">

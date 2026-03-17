@@ -4136,6 +4136,37 @@ p.form-message.error {
     32. Admin Dashboard
 ===========================*/
 .admin-dashboard{}
+.admin-nav{
+    background: #ffffff;
+    border-bottom: 1px solid #e8eef5;
+}
+.admin-nav-inner{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 14px 0;
+}
+.admin-nav-link{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: #f3f6fb;
+    color: #315377;
+    font-size: 13px;
+    font-weight: 700;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+.admin-nav-link:hover{
+    background: #ff5aa5;
+    color: #ffffff;
+}
+.admin-nav-link.is-active{
+    background: #07294d;
+    color: #ffffff;
+}
 .admin-hero{
     background: linear-gradient(135deg, #ffffff 0%, #f4f7fb 100%);
     border: 1px solid #e6edf5;

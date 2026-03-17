@@ -220,6 +220,27 @@
     
     <!--====== PAGE BANNER PART ENDS ======-->
 
+
+    <!--====== ADMIN NAV PART START ======-->
+    <section class="admin-nav">
+        <div class="container">
+            <div class="admin-nav-inner">
+                <a href="admin-dashboard.html" class="admin-nav-link">Overview</a>
+                <a href="admin-admissions.html" class="admin-nav-link is-active">Admissions</a>
+                <a href="admin-learning-areas.html" class="admin-nav-link">Learning Areas</a>
+                <a href="admin-staff.html" class="admin-nav-link">Staff</a>
+                <a href="admin-news.html" class="admin-nav-link">News</a>
+                <a href="admin-gallery.html" class="admin-nav-link">Gallery</a>
+                <a href="admin-resources.html" class="admin-nav-link">Resources</a>
+                <a href="admin-calendar.html" class="admin-nav-link">Calendar</a>
+                <a href="admin-messages.html" class="admin-nav-link">Messages</a>
+                <a href="admin-parent-support.html" class="admin-nav-link">Parent Support</a>
+            </div>
+        </div>
+    </section>
+    <!--====== ADMIN NAV PART ENDS ======-->
+
+
     <!--====== ADMIN ADMISSIONS PART START ======-->
 <section id="admin-admissions" class="pt-70 pb-120 gray-bg admin-dashboard">
     <div class="container">
@@ -309,8 +330,8 @@
                                     <td><span class="admin-badge admin-badge--warning">Documents</span></td>
                                     <td>Records</td>
                                     <td class="admin-table-actions">
-                                        <a href="#">Review</a>
-                                        <a href="#">Request</a>
+                                        <a href="#admissions-review">Review</a>
+                                        <a href="#admissions-docs">Request</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -319,8 +340,8 @@
                                     <td><span class="admin-badge admin-badge--info">Interview</span></td>
                                     <td>Admissions</td>
                                     <td class="admin-table-actions">
-                                        <a href="#">Schedule</a>
-                                        <a href="#">Notify</a>
+                                        <a href="#admissions-interview">Schedule</a>
+                                        <a href="#admissions-interview">Notify</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -329,8 +350,8 @@
                                     <td><span class="admin-badge admin-badge--success">Approved</span></td>
                                     <td>Headteacher</td>
                                     <td class="admin-table-actions">
-                                        <a href="#">Enroll</a>
-                                        <a href="#">Invoice</a>
+                                        <a href="#admissions-enroll">Enroll</a>
+                                        <a href="#admissions-enroll">Invoice</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -339,8 +360,8 @@
                                     <td><span class="admin-badge admin-badge--primary">Assessment</span></td>
                                     <td>Academics</td>
                                     <td class="admin-table-actions">
-                                        <a href="#">Record</a>
-                                        <a href="#">Update</a>
+                                        <a href="#admissions-records">Record</a>
+                                        <a href="#admissions-records">Update</a>
                                     </td>
                                 </tr>
                             </tbody>
@@ -349,7 +370,7 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="admin-card mt-30">
+                <div class="admin-card mt-30" id="admissions-form">
                     <h4>New Admission</h4>
                     <form class="admin-form">
                         <input class="admin-input" type="text" placeholder="Learner name">
@@ -368,8 +389,8 @@
                         <textarea class="admin-textarea" placeholder="Notes"></textarea>
                     </form>
                     <div class="admin-hero-actions">
-                        <a href="#" class="main-btn">Save Admission</a>
-                        <a href="#" class="main-btn main-btn--outline">Send Checklist</a>
+                        <a href="#admissions-form" class="main-btn">Save Admission</a>
+                        <a href="#admissions-docs" class="main-btn main-btn--outline">Send Checklist</a>
                     </div>
                 </div>
             </div>
@@ -378,6 +399,68 @@
 </section>
 <!--====== ADMIN ADMISSIONS PART ENDS ======-->
    
+    <!--====== ADMIN ACTIONS PART START ======-->
+<section id="admissions-actions" class="pt-70 pb-120 admin-dashboard">
+    <div class="container">
+        <div class="admin-page-head">
+            <div>
+                <h3>Admissions Action Center</h3>
+                <p>Jump into the core admissions workflows without leaving the page.</p>
+            </div>
+            <span class="admin-pill"><i class="fa fa-bolt"></i> Action center</span>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="admin-card" id="admissions-review">
+                    <h4>Review Applications</h4>
+                    <p>Verify details, evaluate readiness, and record decisions.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#admin-admissions" class="main-btn main-btn--outline">Back to queue</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="admin-card" id="admissions-docs">
+                    <h4>Request Documents</h4>
+                    <p>Send document checklists and follow up on missing items.</p>
+                    <div class="admin-hero-actions">
+                        <a href="files/holy-rosary-admission-form.pdf" class="main-btn">Download Form</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="admin-card" id="admissions-interview">
+                    <h4>Interview Scheduling</h4>
+                    <p>Plan interviews, notify guardians, and confirm slots.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#admissions-interview" class="main-btn">Create Schedule</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="admin-card" id="admissions-enroll">
+                    <h4>Enrollment and Billing</h4>
+                    <p>Finalize enrollment, generate invoices, and track fee status.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#admissions-enroll" class="main-btn">Open Billing</a>
+                        <a href="#admissions-enroll" class="main-btn main-btn--outline">Send Invoice</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="admin-card" id="admissions-records">
+                    <h4>Assessment Records</h4>
+                    <p>Capture placement assessments and update learner records.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#admissions-records" class="main-btn">Record Assessment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== ADMIN ACTIONS PART ENDS ======-->
+
     <!--====== FOOTER PART START ======-->
     
     <footer id="footer-part">

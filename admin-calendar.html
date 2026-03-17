@@ -220,6 +220,27 @@
     
     <!--====== PAGE BANNER PART ENDS ======-->
 
+
+    <!--====== ADMIN NAV PART START ======-->
+    <section class="admin-nav">
+        <div class="container">
+            <div class="admin-nav-inner">
+                <a href="admin-dashboard.html" class="admin-nav-link">Overview</a>
+                <a href="admin-admissions.html" class="admin-nav-link">Admissions</a>
+                <a href="admin-learning-areas.html" class="admin-nav-link">Learning Areas</a>
+                <a href="admin-staff.html" class="admin-nav-link">Staff</a>
+                <a href="admin-news.html" class="admin-nav-link">News</a>
+                <a href="admin-gallery.html" class="admin-nav-link">Gallery</a>
+                <a href="admin-resources.html" class="admin-nav-link">Resources</a>
+                <a href="admin-calendar.html" class="admin-nav-link is-active">Calendar</a>
+                <a href="admin-messages.html" class="admin-nav-link">Messages</a>
+                <a href="admin-parent-support.html" class="admin-nav-link">Parent Support</a>
+            </div>
+        </div>
+    </section>
+    <!--====== ADMIN NAV PART ENDS ======-->
+
+
     <!--====== ADMIN CALENDAR PART START ======-->
 <section id="admin-calendar" class="pt-70 pb-120 gray-bg admin-dashboard">
     <div class="container">
@@ -257,8 +278,8 @@
                         <textarea class="admin-textarea" placeholder="Event details"></textarea>
                     </form>
                     <div class="admin-hero-actions">
-                        <a href="#" class="main-btn">Add Event</a>
-                        <a href="#" class="main-btn main-btn--outline">Notify Staff</a>
+                        <a href="#calendar-add" class="main-btn">Add Event</a>
+                        <a href="#calendar-comms" class="main-btn main-btn--outline">Notify Staff</a>
                     </div>
                 </div>
             </div>
@@ -266,7 +287,7 @@
                 <div class="admin-card mt-30">
                     <div class="admin-card-head">
                         <h4>Upcoming Events</h4>
-                        <a class="admin-link" href="#">Export calendar</a>
+                        <a class="admin-link" href="#calendar-export">Export calendar</a>
                     </div>
                     <div class="table-responsive">
                         <table class="admin-table">
@@ -285,28 +306,28 @@
                                     <td>Mar 20</td>
                                     <td>Meeting</td>
                                     <td><span class="admin-badge admin-badge--primary">Planned</span></td>
-                                    <td class="admin-table-actions"><a href="#">Edit</a> <a href="#">Notify</a></td>
+                                    <td class="admin-table-actions"><a href="#calendar-manage">Edit</a> <a href="#calendar-comms">Notify</a></td>
                                 </tr>
                                 <tr>
                                     <td>P.7 Mock Exams</td>
                                     <td>Mar 27</td>
                                     <td>Academic</td>
                                     <td><span class="admin-badge admin-badge--info">Prepared</span></td>
-                                    <td class="admin-table-actions"><a href="#">Assign</a> <a href="#">Update</a></td>
+                                    <td class="admin-table-actions"><a href="#calendar-manage">Assign</a> <a href="#calendar-manage">Update</a></td>
                                 </tr>
                                 <tr>
                                     <td>Sports Day</td>
                                     <td>Apr 05</td>
                                     <td>Sports</td>
                                     <td><span class="admin-badge admin-badge--warning">Pending</span></td>
-                                    <td class="admin-table-actions"><a href="#">Plan</a> <a href="#">Invite</a></td>
+                                    <td class="admin-table-actions"><a href="#calendar-manage">Plan</a> <a href="#calendar-comms">Invite</a></td>
                                 </tr>
                                 <tr>
                                     <td>Mid-term Break</td>
                                     <td>Apr 12</td>
                                     <td>Academic</td>
                                     <td><span class="admin-badge admin-badge--success">Confirmed</span></td>
-                                    <td class="admin-table-actions"><a href="#">View</a> <a href="#">Share</a></td>
+                                    <td class="admin-table-actions"><a href="#calendar-manage">View</a> <a href="#calendar-comms">Share</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -318,6 +339,58 @@
 </section>
 <!--====== ADMIN CALENDAR PART ENDS ======-->
    
+    <!--====== ADMIN ACTIONS PART START ======-->
+<section id="calendar-actions" class="pt-70 pb-120 admin-dashboard">
+    <div class="container">
+        <div class="admin-page-head">
+            <div>
+                <h3>Calendar Action Center</h3>
+                <p>Manage term events, coordinate teams, and share updates.</p>
+            </div>
+            <span class="admin-pill"><i class="fa fa-calendar"></i> Action center</span>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="admin-card" id="calendar-add">
+                    <h4>Add Events</h4>
+                    <p>Create new events and schedule activities for the term.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#admin-calendar" class="main-btn main-btn--outline">Back to form</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="admin-card" id="calendar-manage">
+                    <h4>Manage Events</h4>
+                    <p>Edit details, assign owners, and keep events up to date.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#calendar-manage" class="main-btn">Open Planner</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="admin-card" id="calendar-comms">
+                    <h4>Communications</h4>
+                    <p>Notify staff, share calendars, and send reminders.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#calendar-comms" class="main-btn">Send Update</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12">
+                <div class="admin-card" id="calendar-export">
+                    <h4>Export Calendar</h4>
+                    <p>Download calendar summaries for staff and parents.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#calendar-export" class="main-btn">Export</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== ADMIN ACTIONS PART ENDS ======-->
+
     <!--====== FOOTER PART START ======-->
     
     <footer id="footer-part">

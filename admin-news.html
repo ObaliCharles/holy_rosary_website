@@ -220,6 +220,27 @@
     
     <!--====== PAGE BANNER PART ENDS ======-->
 
+
+    <!--====== ADMIN NAV PART START ======-->
+    <section class="admin-nav">
+        <div class="container">
+            <div class="admin-nav-inner">
+                <a href="admin-dashboard.html" class="admin-nav-link">Overview</a>
+                <a href="admin-admissions.html" class="admin-nav-link">Admissions</a>
+                <a href="admin-learning-areas.html" class="admin-nav-link">Learning Areas</a>
+                <a href="admin-staff.html" class="admin-nav-link">Staff</a>
+                <a href="admin-news.html" class="admin-nav-link is-active">News</a>
+                <a href="admin-gallery.html" class="admin-nav-link">Gallery</a>
+                <a href="admin-resources.html" class="admin-nav-link">Resources</a>
+                <a href="admin-calendar.html" class="admin-nav-link">Calendar</a>
+                <a href="admin-messages.html" class="admin-nav-link">Messages</a>
+                <a href="admin-parent-support.html" class="admin-nav-link">Parent Support</a>
+            </div>
+        </div>
+    </section>
+    <!--====== ADMIN NAV PART ENDS ======-->
+
+
     <!--====== ADMIN NEWS PART START ======-->
 <section id="admin-news" class="pt-70 pb-120 gray-bg admin-dashboard">
     <div class="container">
@@ -245,7 +266,7 @@
                 <div class="admin-card mt-30">
                     <div class="admin-card-head">
                         <h4>Story Pipeline</h4>
-                        <a class="admin-link" href="#">New story</a>
+                        <a class="admin-link" href="#news-new">New story</a>
                     </div>
                     <div class="table-responsive">
                         <table class="admin-table">
@@ -263,8 +284,8 @@
                                     <td>Community</td>
                                     <td><span class="admin-badge admin-badge--success">Published</span></td>
                                     <td class="admin-table-actions">
-                                        <a href="#">Edit</a>
-                                        <a href="#">Share</a>
+                                        <a href="#news-edit">Edit</a>
+                                        <a href="#news-edit">Share</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -272,8 +293,8 @@
                                     <td>Academics</td>
                                     <td><span class="admin-badge admin-badge--info">Scheduled</span></td>
                                     <td class="admin-table-actions">
-                                        <a href="#">Edit</a>
-                                        <a href="#">Reschedule</a>
+                                        <a href="#news-edit">Edit</a>
+                                        <a href="#news-schedule">Reschedule</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -281,8 +302,8 @@
                                     <td>Literacy</td>
                                     <td><span class="admin-badge admin-badge--warning">Draft</span></td>
                                     <td class="admin-table-actions">
-                                        <a href="#">Finish</a>
-                                        <a href="#">Assign</a>
+                                        <a href="#news-edit">Finish</a>
+                                        <a href="#news-approval">Assign</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -290,8 +311,8 @@
                                     <td>Outreach</td>
                                     <td><span class="admin-badge admin-badge--primary">Review</span></td>
                                     <td class="admin-table-actions">
-                                        <a href="#">Approve</a>
-                                        <a href="#">Comment</a>
+                                        <a href="#news-approval">Approve</a>
+                                        <a href="#news-approval">Comment</a>
                                     </td>
                                 </tr>
                             </tbody>
@@ -316,8 +337,8 @@
                         <textarea class="admin-textarea" placeholder="Story summary"></textarea>
                     </form>
                     <div class="admin-hero-actions">
-                        <a href="#" class="main-btn">Save Draft</a>
-                        <a href="#" class="main-btn main-btn--outline">Schedule</a>
+                        <a href="#news-new" class="main-btn">Save Draft</a>
+                        <a href="#news-schedule" class="main-btn main-btn--outline">Schedule</a>
                     </div>
                 </div>
             </div>
@@ -332,8 +353,8 @@
                     </div>
                     <p>Showcase the most important story of the week on the homepage. Confirm images, headline length, and call to action before publishing.</p>
                     <div class="admin-hero-actions">
-                        <a href="#" class="main-btn">Open Preview</a>
-                        <a href="#" class="main-btn main-btn--outline">Change Highlight</a>
+                        <a href="#news-preview" class="main-btn">Open Preview</a>
+                        <a href="#news-highlight" class="main-btn main-btn--outline">Change Highlight</a>
                     </div>
                 </div>
             </div>
@@ -342,6 +363,77 @@
 </section>
 <!--====== ADMIN NEWS PART ENDS ======-->
    
+    <!--====== ADMIN ACTIONS PART START ======-->
+<section id="news-actions" class="pt-70 pb-120 admin-dashboard">
+    <div class="container">
+        <div class="admin-page-head">
+            <div>
+                <h3>News Action Center</h3>
+                <p>Plan stories, review drafts, and highlight key announcements.</p>
+            </div>
+            <span class="admin-pill"><i class="fa fa-newspaper-o"></i> Action center</span>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="admin-card" id="news-new">
+                    <h4>Create New Story</h4>
+                    <p>Draft headlines, select categories, and assign authors.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#admin-news" class="main-btn main-btn--outline">Back to pipeline</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="admin-card" id="news-edit">
+                    <h4>Edit and Collaborate</h4>
+                    <p>Refine drafts, add photos, and share with reviewers.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#news-edit" class="main-btn">Open Editor</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="admin-card" id="news-schedule">
+                    <h4>Scheduling</h4>
+                    <p>Set publish dates, reschedule posts, and update timelines.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#news-schedule" class="main-btn">Open Schedule</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="admin-card" id="news-approval">
+                    <h4>Approval Workflow</h4>
+                    <p>Assign reviewers, track approvals, and record feedback.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#news-approval" class="main-btn">Open Review</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="admin-card" id="news-preview">
+                    <h4>Preview and Highlights</h4>
+                    <p>Preview homepage highlights and adjust featured content.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#news-preview" class="main-btn">Preview Story</a>
+                        <a href="#news-highlight" class="main-btn main-btn--outline">Highlight Settings</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12">
+                <div class="admin-card" id="news-highlight">
+                    <h4>Highlight Management</h4>
+                    <p>Choose featured stories and confirm the homepage spotlight.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#news-highlight" class="main-btn">Update Highlight</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== ADMIN ACTIONS PART ENDS ======-->
+
     <!--====== FOOTER PART START ======-->
     
     <footer id="footer-part">

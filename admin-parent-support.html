@@ -220,6 +220,27 @@
     
     <!--====== PAGE BANNER PART ENDS ======-->
 
+
+    <!--====== ADMIN NAV PART START ======-->
+    <section class="admin-nav">
+        <div class="container">
+            <div class="admin-nav-inner">
+                <a href="admin-dashboard.html" class="admin-nav-link">Overview</a>
+                <a href="admin-admissions.html" class="admin-nav-link">Admissions</a>
+                <a href="admin-learning-areas.html" class="admin-nav-link">Learning Areas</a>
+                <a href="admin-staff.html" class="admin-nav-link">Staff</a>
+                <a href="admin-news.html" class="admin-nav-link">News</a>
+                <a href="admin-gallery.html" class="admin-nav-link">Gallery</a>
+                <a href="admin-resources.html" class="admin-nav-link">Resources</a>
+                <a href="admin-calendar.html" class="admin-nav-link">Calendar</a>
+                <a href="admin-messages.html" class="admin-nav-link">Messages</a>
+                <a href="admin-parent-support.html" class="admin-nav-link is-active">Parent Support</a>
+            </div>
+        </div>
+    </section>
+    <!--====== ADMIN NAV PART ENDS ======-->
+
+
     <!--====== ADMIN PARENT SUPPORT PART START ======-->
 <section id="admin-parent-support" class="pt-70 pb-120 gray-bg admin-dashboard">
     <div class="container">
@@ -246,8 +267,8 @@
                     <h4>Admissions Policy</h4>
                     <p>Admissions requirements, timelines, and documentation checklist.</p>
                     <div class="admin-hero-actions">
-                        <a href="#" class="main-btn">Edit Policy</a>
-                        <a href="#" class="main-btn main-btn--outline">Share</a>
+                        <a href="#support-policy" class="main-btn">Edit Policy</a>
+                        <a href="#support-publish" class="main-btn main-btn--outline">Share</a>
                     </div>
                 </div>
             </div>
@@ -256,8 +277,8 @@
                     <h4>Attendance Policy</h4>
                     <p>Attendance expectations, follow-up steps, and parent engagement.</p>
                     <div class="admin-hero-actions">
-                        <a href="#" class="main-btn">Edit Policy</a>
-                        <a href="#" class="main-btn main-btn--outline">Publish</a>
+                        <a href="#support-policy" class="main-btn">Edit Policy</a>
+                        <a href="#support-publish" class="main-btn main-btn--outline">Publish</a>
                     </div>
                 </div>
             </div>
@@ -266,8 +287,8 @@
                     <h4>Behavior Policy</h4>
                     <p>Positive discipline guidance and escalation protocols.</p>
                     <div class="admin-hero-actions">
-                        <a href="#" class="main-btn">Edit Policy</a>
-                        <a href="#" class="main-btn main-btn--outline">Review</a>
+                        <a href="#support-policy" class="main-btn">Edit Policy</a>
+                        <a href="#support-publish" class="main-btn main-btn--outline">Review</a>
                     </div>
                 </div>
             </div>
@@ -278,7 +299,7 @@
                 <div class="admin-card mt-30">
                     <div class="admin-card-head">
                         <h4>Admissions FAQs</h4>
-                        <a class="admin-link" href="#">Add FAQ</a>
+                        <a class="admin-link" href="#support-faq">Add FAQ</a>
                     </div>
                     <div class="table-responsive">
                         <table class="admin-table">
@@ -293,17 +314,17 @@
                                 <tr>
                                     <td>What documents are required?</td>
                                     <td><span class="admin-badge admin-badge--success">Published</span></td>
-                                    <td class="admin-table-actions"><a href="#">Edit</a> <a href="#">Archive</a></td>
+                                    <td class="admin-table-actions"><a href="#support-faq">Edit</a> <a href="#support-faq">Archive</a></td>
                                 </tr>
                                 <tr>
                                     <td>When does the term start?</td>
                                     <td><span class="admin-badge admin-badge--info">Review</span></td>
-                                    <td class="admin-table-actions"><a href="#">Update</a> <a href="#">Publish</a></td>
+                                    <td class="admin-table-actions"><a href="#support-faq">Update</a> <a href="#support-publish">Publish</a></td>
                                 </tr>
                                 <tr>
                                     <td>How are fees handled?</td>
                                     <td><span class="admin-badge admin-badge--warning">Draft</span></td>
-                                    <td class="admin-table-actions"><a href="#">Finish</a> <a href="#">Assign</a></td>
+                                    <td class="admin-table-actions"><a href="#support-faq">Finish</a> <a href="#support-faq">Assign</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -319,8 +340,8 @@
                         <li><i class="fa fa-check"></i> Review incident log weekly</li>
                     </ul>
                     <div class="admin-hero-actions">
-                        <a href="#" class="main-btn">Update Safeguarding</a>
-                        <a href="#" class="main-btn main-btn--outline">Download Guide</a>
+                        <a href="#support-safeguard" class="main-btn">Update Safeguarding</a>
+                        <a href="#support-safeguard" class="main-btn main-btn--outline">Download Guide</a>
                     </div>
                 </div>
             </div>
@@ -329,6 +350,58 @@
 </section>
 <!--====== ADMIN PARENT SUPPORT PART ENDS ======-->
    
+    <!--====== ADMIN ACTIONS PART START ======-->
+<section id="support-actions" class="pt-70 pb-120 admin-dashboard">
+    <div class="container">
+        <div class="admin-page-head">
+            <div>
+                <h3>Parent Support Action Center</h3>
+                <p>Maintain policies, FAQs, and safeguarding guidance for families.</p>
+            </div>
+            <span class="admin-pill"><i class="fa fa-shield"></i> Action center</span>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="admin-card" id="support-policy">
+                    <h4>Policy Updates</h4>
+                    <p>Edit and review policies before publishing to parents.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#admin-parent-support" class="main-btn main-btn--outline">Back to policies</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="admin-card" id="support-faq">
+                    <h4>FAQ Management</h4>
+                    <p>Update frequently asked questions and assign owners.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#support-faq" class="main-btn">Add FAQ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="admin-card" id="support-publish">
+                    <h4>Publish Updates</h4>
+                    <p>Share policy changes and confirmations with the community.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#support-publish" class="main-btn">Publish Update</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12">
+                <div class="admin-card" id="support-safeguard">
+                    <h4>Safeguarding</h4>
+                    <p>Review safeguarding checklists and download guidance.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#support-safeguard" class="main-btn">Open Checklist</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== ADMIN ACTIONS PART ENDS ======-->
+
     <!--====== FOOTER PART START ======-->
     
     <footer id="footer-part">

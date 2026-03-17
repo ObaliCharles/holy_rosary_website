@@ -220,6 +220,27 @@
     
     <!--====== PAGE BANNER PART ENDS ======-->
 
+
+    <!--====== ADMIN NAV PART START ======-->
+    <section class="admin-nav">
+        <div class="container">
+            <div class="admin-nav-inner">
+                <a href="admin-dashboard.html" class="admin-nav-link">Overview</a>
+                <a href="admin-admissions.html" class="admin-nav-link">Admissions</a>
+                <a href="admin-learning-areas.html" class="admin-nav-link">Learning Areas</a>
+                <a href="admin-staff.html" class="admin-nav-link">Staff</a>
+                <a href="admin-news.html" class="admin-nav-link">News</a>
+                <a href="admin-gallery.html" class="admin-nav-link">Gallery</a>
+                <a href="admin-resources.html" class="admin-nav-link is-active">Resources</a>
+                <a href="admin-calendar.html" class="admin-nav-link">Calendar</a>
+                <a href="admin-messages.html" class="admin-nav-link">Messages</a>
+                <a href="admin-parent-support.html" class="admin-nav-link">Parent Support</a>
+            </div>
+        </div>
+    </section>
+    <!--====== ADMIN NAV PART ENDS ======-->
+
+
     <!--====== ADMIN RESOURCES PART START ======-->
 <section id="admin-resources" class="pt-70 pb-120 gray-bg admin-dashboard">
     <div class="container">
@@ -308,8 +329,8 @@
                         <span>PDF, DOC, or PPT accepted</span>
                     </div>
                     <div class="admin-hero-actions">
-                        <a href="#" class="main-btn">Publish Resource</a>
-                        <a href="#" class="main-btn main-btn--outline">Save Draft</a>
+                        <a href="#resources-upload" class="main-btn">Publish Resource</a>
+                        <a href="#resources-upload" class="main-btn main-btn--outline">Save Draft</a>
                     </div>
                 </div>
             </div>
@@ -317,7 +338,7 @@
                 <div class="admin-card mt-30">
                     <div class="admin-card-head">
                         <h4>Resource Library</h4>
-                        <a class="admin-link" href="#">Export list</a>
+                        <a class="admin-link" href="#resources-export">Export list</a>
                     </div>
                     <div class="table-responsive">
                         <table class="admin-table">
@@ -336,28 +357,28 @@
                                     <td>P.4</td>
                                     <td>312</td>
                                     <td><span class="admin-badge admin-badge--success">Published</span></td>
-                                    <td class="admin-table-actions"><a href="#">Edit</a> <a href="#">Replace</a></td>
+                                    <td class="admin-table-actions"><a href="#resources-library">Edit</a> <a href="#resources-library">Replace</a></td>
                                 </tr>
                                 <tr>
                                     <td>P.6 English Composition Pack</td>
                                     <td>P.6</td>
                                     <td>188</td>
                                     <td><span class="admin-badge admin-badge--info">Updated</span></td>
-                                    <td class="admin-table-actions"><a href="#">Edit</a> <a href="#">Archive</a></td>
+                                    <td class="admin-table-actions"><a href="#resources-library">Edit</a> <a href="#resources-library">Archive</a></td>
                                 </tr>
                                 <tr>
                                     <td>P.7 English PLE Past Paper</td>
                                     <td>P.7</td>
                                     <td>94</td>
                                     <td><span class="admin-badge admin-badge--warning">Review</span></td>
-                                    <td class="admin-table-actions"><a href="#">Review</a> <a href="#">Publish</a></td>
+                                    <td class="admin-table-actions"><a href="#resources-review">Review</a> <a href="#resources-review">Publish</a></td>
                                 </tr>
                                 <tr>
                                     <td>P.2 Numeracy Drill Worksheets</td>
                                     <td>P.2</td>
                                     <td>265</td>
                                     <td><span class="admin-badge admin-badge--primary">Scheduled</span></td>
-                                    <td class="admin-table-actions"><a href="#">Reschedule</a> <a href="#">Edit</a></td>
+                                    <td class="admin-table-actions"><a href="#resources-review">Reschedule</a> <a href="#resources-library">Edit</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -369,6 +390,58 @@
 </section>
 <!--====== ADMIN RESOURCES PART ENDS ======-->
    
+    <!--====== ADMIN ACTIONS PART START ======-->
+<section id="resources-actions" class="pt-70 pb-120 admin-dashboard">
+    <div class="container">
+        <div class="admin-page-head">
+            <div>
+                <h3>Resources Action Center</h3>
+                <p>Upload new materials, review existing files, and manage publishing.</p>
+            </div>
+            <span class="admin-pill"><i class="fa fa-cloud-download"></i> Action center</span>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="admin-card" id="resources-upload">
+                    <h4>Upload and Publish</h4>
+                    <p>Add new resources, assign classes, and publish for download.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#admin-resources" class="main-btn main-btn--outline">Back to upload</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="admin-card" id="resources-library">
+                    <h4>Library Maintenance</h4>
+                    <p>Edit, replace, or archive files in the resource library.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#resources-library" class="main-btn">Open Library</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="admin-card" id="resources-review">
+                    <h4>Review Queue</h4>
+                    <p>Check quality, approve updates, and schedule releases.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#resources-review" class="main-btn">Start Review</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12">
+                <div class="admin-card" id="resources-export">
+                    <h4>Export Reports</h4>
+                    <p>Download resource summaries for reporting and planning.</p>
+                    <div class="admin-hero-actions">
+                        <a href="#resources-export" class="main-btn">Export List</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== ADMIN ACTIONS PART ENDS ======-->
+
     <!--====== FOOTER PART START ======-->
     
     <footer id="footer-part">
