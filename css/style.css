@@ -616,21 +616,40 @@ p {
     top: -7px;
 }
 
-.right-icon{}
+.right-icon{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    --icon-size: clamp(34px, 4.5vw, 38px);
+    --icon-font: clamp(16px, 2.2vw, 18px);
+}
+.right-icon ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: clamp(8px, 2vw, 14px);
+}
 .right-icon ul li{
-    display: inline-block;
-    margin-right: 17px;
-    padding: 22px 0;
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    padding: 0;
 }
 .right-icon ul li:last-child{
     margin-right: 0;
 }
 
 .right-icon ul li a{
-    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--icon-size);
+    width: var(--icon-size);
+    font-size: var(--icon-font);
     color: #07294d;
     position: relative;
-    padding-right: 7px;
+    padding-right: 0;
 }
 .right-icon ul li a span{
     font-size: 12px;
@@ -642,6 +661,171 @@ p {
     top: -5px;
     right: 0;
 }
+
+.right-icon ul li.profile-login-wrap{
+    width: var(--icon-size);
+    height: var(--icon-size);
+    position: relative;
+    overflow: visible;
+}
+.profile-login{
+    --collapsed-width: var(--icon-size);
+    --expanded-width: clamp(120px, 18vw, 156px);
+    --avatar-size: calc(var(--icon-size) - 8px);
+    --stacked-button-height: clamp(36px, 5vw, 44px);
+    --stacked-overlap: calc(var(--avatar-size) * 0.45);
+    --stacked-width: clamp(120px, 32vw, 170px);
+    --stacked-height: calc(var(--avatar-size) + var(--stacked-button-height) - var(--stacked-overlap));
+    width: var(--collapsed-width);
+    height: var(--icon-size);
+    border: none;
+    background: transparent;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding: 0 4px;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    overflow: hidden;
+    z-index: 5;
+    -webkit-transition: width 0.35s cubic-bezier(0.22, 1, 0.36, 1), height 0.35s cubic-bezier(0.22, 1, 0.36, 1), -webkit-transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+    transition: width 0.35s cubic-bezier(0.22, 1, 0.36, 1), height 0.35s cubic-bezier(0.22, 1, 0.36, 1), transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.profile-login::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #ffc600;
+    border-radius: 999px;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    -webkit-transition: -webkit-transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), top 0.35s cubic-bezier(0.22, 1, 0.36, 1), height 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), top 0.35s cubic-bezier(0.22, 1, 0.36, 1), height 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+    z-index: 0;
+}
+.profile-login.is-open{
+    width: var(--expanded-width);
+    box-shadow: 0 10px 24px rgba(7, 41, 77, 0.18);
+    gap: 10px;
+}
+.profile-login.is-open::before{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.profile-login img{
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #07294d;
+    box-sizing: border-box;
+    padding: 4px;
+    flex: 0 0 auto;
+    position: relative;
+    z-index: 1;
+}
+.profile-login__text{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    max-width: 0;
+    opacity: 0;
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease, max-width 0.2s ease;
+    transition: opacity 0.2s ease, transform 0.2s ease, max-width 0.2s ease;
+    transition-delay: 0s;
+    white-space: nowrap;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.profile-login.is-open .profile-login__text{
+    max-width: 120px;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    transition-delay: 0.12s;
+}
+
+@media (max-width: 900px){
+    .profile-login{
+        --stacked-button-height: clamp(32px, 6vw, 38px);
+        --stacked-width: clamp(90px, 34vw, 125px);
+    }
+    .profile-login{
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .profile-login::before{
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+    }
+    .profile-login.is-open{
+        width: var(--stacked-width);
+        height: var(--stacked-height);
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 0;
+        padding: 0;
+        overflow: visible;
+        box-shadow: 0 12px 26px rgba(7, 41, 77, 0.2);
+    }
+    .profile-login.is-open::before{
+        top: calc(var(--avatar-size) - var(--stacked-overlap));
+        height: calc(100% - (var(--avatar-size) - var(--stacked-overlap)));
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+    .profile-login.is-open img{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
+    .profile-login__text{
+        opacity: 0;
+        max-width: none;
+        width: 100%;
+        height: var(--stacked-button-height);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+    .profile-login.is-open .profile-login__text{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        transition-delay: 0.12s;
+    }
+}
+@media (max-width: 768px){
+    .profile-login{
+        left: auto;
+        right: 0;
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+    }
+}
+.profile-login:hover{
+    box-shadow: 0 6px 16px rgba(7, 41, 77, 0.15);
+}
+
 
 /*===== Index-2 =====*/
 
@@ -3783,11 +3967,3 @@ p.form-message.error {
 .contact-address .contact-heading h5{
 	padding-bottom: 15px;
 }
-
-
-
-
-
-
-
-

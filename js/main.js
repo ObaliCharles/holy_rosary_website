@@ -27,7 +27,7 @@ $(function() {
     $('.closebtn').on('click', function(){
         $(".search-box").fadeOut(600);
     });
-    
+
     
     //===== Sticky
     
@@ -406,4 +406,29 @@ $(function() {
     
     
     
+});
+
+// Profile login morph (vanilla JS)
+document.addEventListener('DOMContentLoaded', function () {
+    var profileButtons = document.querySelectorAll('.profile-login');
+    if (!profileButtons.length) {
+        return;
+    }
+
+    profileButtons.forEach(function (button) {
+        button.addEventListener('click', function (event) {
+            event.stopPropagation();
+            var isOpen = button.classList.toggle('is-open');
+            button.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+    });
+
+    document.addEventListener('click', function (event) {
+        profileButtons.forEach(function (button) {
+            if (button.classList.contains('is-open') && !button.contains(event.target)) {
+                button.classList.remove('is-open');
+                button.setAttribute('aria-expanded', 'false');
+            }
+        });
+    });
 });

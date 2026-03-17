@@ -64,7 +64,10 @@
 	font-size: 15px;
 }
 .right-icon ul li {
-	margin-right: 3px;
+	margin-right: 0;
+}
+.right-icon ul{
+	gap: 8px;
 }
 
 .category-form {
