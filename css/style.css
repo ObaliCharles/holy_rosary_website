@@ -439,6 +439,21 @@ p {
 .header-logo-support{
     border-bottom: 1px solid #cecece;
 }
+.header-logo-support .logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.header-logo-support .logo a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.header-logo-support .logo img{
+    width: clamp(120px, 22vw, 180px);
+    height: auto;
+    display: block;
+}
 
 .support-button{}
 .support-button .support {
