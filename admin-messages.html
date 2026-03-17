@@ -5,11 +5,11 @@
     <!--====== Required meta tags ======-->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="Admin login for Holy Rosary Primary School Gulu. Access study resources management and uploads.">
+    <meta name="description" content="Manage parent support requests and inquiries for Holy Rosary Primary School Gulu.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!--====== Title ======-->
-    <title>Admin Login | Holy Rosary Primary School Gulu</title>
+    <title>Parent Support Inbox | Admin Dashboard | Holy Rosary Primary School Gulu</title>
     
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
@@ -200,16 +200,16 @@
    
     <!--====== PAGE BANNER PART START ======-->
     
-    <section id="page-banner" class="pt-105 pb-130 bg_cover" data-overlay="8" style="background-image: url(images/page-banner-4.jpg)">
+    <section id="page-banner" class="pt-105 pb-130 bg_cover" data-overlay="8" style="background-image: url(images/page-banner-2.jpg)">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="page-banner-cont">
-                        <h2>Admin Login</h2>
+                        <h2>Parent Support Inbox</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Admin Login</li>
+                                <li class="breadcrumb-item active" aria-current="page">Parent Support Inbox</li>
                             </ol>
                         </nav>
                     </div>  <!-- page banner cont -->
@@ -220,56 +220,139 @@
     
     <!--====== PAGE BANNER PART ENDS ======-->
 
-    <!--====== LOGIN PART START ======-->
-    
-    <section id="login-page" class="pt-90 pb-120 gray-bg login-page">
-        <div class="container">
-            <div class="row align-items-stretch">
-                <div class="col-lg-6">
-                    <div class="login-panel mt-30">
-                        <h3>Admin Resource Access</h3>
-                        <p>Manage study resources, upload past papers, and keep homework packs ready for every learner.</p>
-                        <ul class="login-list">
-                            <li><i class="fa fa-cloud-upload"></i> Upload new past papers and revision packs.</li>
-                            <li><i class="fa fa-folder-open"></i> Organize files by class and term.</li>
-                            <li><i class="fa fa-shield"></i> Protect content with admin-only access.</li>
-                        </ul>
-                        <div class="login-help">
-                            <p><strong>Need admin access?</strong> Contact the Headteacher or ICT officer for credentials.</p>
-                            <p>Phone: +256 772 123 456</p>
-                            <p>Email: admin@holyrosarygulu.org</p>
-                        </div>
+    <!--====== ADMIN MESSAGES PART START ======-->
+<section id="admin-messages" class="pt-70 pb-120 gray-bg admin-dashboard">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="admin-page-head">
+                    <div>
+                        <h3>Parent Support Inbox</h3>
+                        <p>Respond to inquiries, assign owners, and track safeguarding follow-ups.</p>
+                    </div>
+                    <div class="admin-filters">
+                        <span class="admin-filter is-active">All</span>
+                        <span class="admin-filter">Urgent</span>
+                        <span class="admin-filter">New</span>
+                        <span class="admin-filter">Resolved</span>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="login-card mt-30">
-                        <h4>Admin Sign In</h4>
-                        <p>Enter your email and password to access the resource dashboard.</p>
-                        <form class="login-form" action="#" method="post">
-                            <div class="singel-form form-group">
-                                <input type="email" placeholder="Email address" required="required">
-                            </div>
-                            <div class="singel-form form-group">
-                                <input type="password" placeholder="Password" required="required">
-                            </div>
-                            <div class="singel-form">
-                                <button type="submit" class="main-btn">Login</button>
-                            </div>
-                        </form>
-                        <div class="login-note">
-                            <strong>Note:</strong> This login is only for admin users.
-                        </div>
-                        <div class="login-links">
-                            <div><a href="admin-dashboard.html">Open Admin Dashboard</a></div>
-                            <div>Not an admin? <a href="index.html">Go to Home</a></div>
-                        </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="admin-card admin-stat mt-30">
+                    <div class="admin-stat-icon is-blue"><i class="fa fa-envelope"></i></div>
+                    <div class="admin-stat-body">
+                        <span>New Messages</span>
+                        <h3>16</h3>
+                        <p><i class="fa fa-arrow-up"></i> +4 today</p>
                     </div>
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-    
-    <!--====== LOGIN PART ENDS ======-->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="admin-card admin-stat mt-30">
+                    <div class="admin-stat-icon is-pink"><i class="fa fa-bell"></i></div>
+                    <div class="admin-stat-body">
+                        <span>Urgent</span>
+                        <h3>5</h3>
+                        <p><i class="fa fa-exclamation"></i> Needs response</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="admin-card admin-stat mt-30">
+                    <div class="admin-stat-icon is-green"><i class="fa fa-check"></i></div>
+                    <div class="admin-stat-body">
+                        <span>Resolved</span>
+                        <h3>42</h3>
+                        <p><i class="fa fa-flag"></i> This month</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="admin-card admin-stat mt-30">
+                    <div class="admin-stat-icon is-gold"><i class="fa fa-clock-o"></i></div>
+                    <div class="admin-stat-body">
+                        <span>Avg Response</span>
+                        <h3>6h</h3>
+                        <p><i class="fa fa-chart-line"></i> Target 4h</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="admin-card mt-30">
+                    <div class="admin-card-head">
+                        <h4>Inbox</h4>
+                        <a class="admin-link" href="#">Bulk assign</a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Topic</th>
+                                    <th>Priority</th>
+                                    <th>Owner</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Safeguarding inquiry</td>
+                                    <td><span class="admin-badge admin-badge--danger">Urgent</span></td>
+                                    <td>Headteacher</td>
+                                    <td>Pending</td>
+                                    <td class="admin-table-actions"><a href="#">Respond</a> <a href="#">Assign</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Term fees clarification</td>
+                                    <td><span class="admin-badge admin-badge--warning">High</span></td>
+                                    <td>Accounts</td>
+                                    <td>Responding</td>
+                                    <td class="admin-table-actions"><a href="#">Update</a> <a href="#">Note</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Transport request</td>
+                                    <td><span class="admin-badge admin-badge--info">Normal</span></td>
+                                    <td>Admin</td>
+                                    <td>Queued</td>
+                                    <td class="admin-table-actions"><a href="#">Reply</a> <a href="#">Assign</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Transfer letter request</td>
+                                    <td><span class="admin-badge admin-badge--primary">Normal</span></td>
+                                    <td>Records</td>
+                                    <td>In review</td>
+                                    <td class="admin-table-actions"><a href="#">Draft</a> <a href="#">Approve</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="admin-card mt-30">
+                    <h4>Response Templates</h4>
+                    <ul class="admin-checklist">
+                        <li><i class="fa fa-file-text-o"></i> Fee structure and payment plan</li>
+                        <li><i class="fa fa-file-text-o"></i> Admissions requirements checklist</li>
+                        <li><i class="fa fa-file-text-o"></i> Safeguarding escalation steps</li>
+                    </ul>
+                    <div class="admin-hero-actions">
+                        <a href="#" class="main-btn">Create Template</a>
+                        <a href="#" class="main-btn main-btn--outline">Review SLA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== ADMIN MESSAGES PART ENDS ======-->
    
     <!--====== FOOTER PART START ======-->
     

@@ -5,11 +5,11 @@
     <!--====== Required meta tags ======-->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="Admin login for Holy Rosary Primary School Gulu. Access study resources management and uploads.">
+    <meta name="description" content="Manage learning areas, curriculum updates, and assessment schedules for Holy Rosary Primary School Gulu.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!--====== Title ======-->
-    <title>Admin Login | Holy Rosary Primary School Gulu</title>
+    <title>Learning Areas | Admin Dashboard | Holy Rosary Primary School Gulu</title>
     
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
@@ -200,16 +200,16 @@
    
     <!--====== PAGE BANNER PART START ======-->
     
-    <section id="page-banner" class="pt-105 pb-130 bg_cover" data-overlay="8" style="background-image: url(images/page-banner-4.jpg)">
+    <section id="page-banner" class="pt-105 pb-130 bg_cover" data-overlay="8" style="background-image: url(images/page-banner-2.jpg)">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="page-banner-cont">
-                        <h2>Admin Login</h2>
+                        <h2>Learning Areas</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Admin Login</li>
+                                <li class="breadcrumb-item active" aria-current="page">Learning Areas</li>
                             </ol>
                         </nav>
                     </div>  <!-- page banner cont -->
@@ -220,56 +220,168 @@
     
     <!--====== PAGE BANNER PART ENDS ======-->
 
-    <!--====== LOGIN PART START ======-->
-    
-    <section id="login-page" class="pt-90 pb-120 gray-bg login-page">
-        <div class="container">
-            <div class="row align-items-stretch">
-                <div class="col-lg-6">
-                    <div class="login-panel mt-30">
-                        <h3>Admin Resource Access</h3>
-                        <p>Manage study resources, upload past papers, and keep homework packs ready for every learner.</p>
-                        <ul class="login-list">
-                            <li><i class="fa fa-cloud-upload"></i> Upload new past papers and revision packs.</li>
-                            <li><i class="fa fa-folder-open"></i> Organize files by class and term.</li>
-                            <li><i class="fa fa-shield"></i> Protect content with admin-only access.</li>
-                        </ul>
-                        <div class="login-help">
-                            <p><strong>Need admin access?</strong> Contact the Headteacher or ICT officer for credentials.</p>
-                            <p>Phone: +256 772 123 456</p>
-                            <p>Email: admin@holyrosarygulu.org</p>
-                        </div>
+    <!--====== ADMIN LEARNING AREAS PART START ======-->
+<section id="admin-learning-areas" class="pt-70 pb-120 gray-bg admin-dashboard">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="admin-page-head">
+                    <div>
+                        <h3>Learning Areas Management</h3>
+                        <p>Update curriculum plans, align assessments, and communicate learning targets by class.</p>
+                    </div>
+                    <div class="admin-filters">
+                        <span class="admin-filter is-active">All</span>
+                        <span class="admin-filter">Literacy</span>
+                        <span class="admin-filter">Numeracy</span>
+                        <span class="admin-filter">Science</span>
+                        <span class="admin-filter">Social Studies</span>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="login-card mt-30">
-                        <h4>Admin Sign In</h4>
-                        <p>Enter your email and password to access the resource dashboard.</p>
-                        <form class="login-form" action="#" method="post">
-                            <div class="singel-form form-group">
-                                <input type="email" placeholder="Email address" required="required">
-                            </div>
-                            <div class="singel-form form-group">
-                                <input type="password" placeholder="Password" required="required">
-                            </div>
-                            <div class="singel-form">
-                                <button type="submit" class="main-btn">Login</button>
-                            </div>
-                        </form>
-                        <div class="login-note">
-                            <strong>Note:</strong> This login is only for admin users.
-                        </div>
-                        <div class="login-links">
-                            <div><a href="admin-dashboard.html">Open Admin Dashboard</a></div>
-                            <div>Not an admin? <a href="index.html">Go to Home</a></div>
-                        </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="admin-module">
+                    <div class="admin-module-icon is-blue"><i class="fa fa-book"></i></div>
+                    <h5>Literacy and English</h5>
+                    <p>Reading circles, vocabulary goals, and writing benchmarks.</p>
+                    <div class="admin-module-actions">
+                        <a href="#">Edit Plan</a>
+                        <a href="#">Share Targets</a>
                     </div>
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-    
-    <!--====== LOGIN PART ENDS ======-->
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="admin-module">
+                    <div class="admin-module-icon is-pink"><i class="fa fa-calculator"></i></div>
+                    <h5>Numeracy and Math</h5>
+                    <p>Daily drills, mastery checks, and remedial support.</p>
+                    <div class="admin-module-actions">
+                        <a href="#">Edit Plan</a>
+                        <a href="#">Assign Coach</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="admin-module">
+                    <div class="admin-module-icon is-green"><i class="fa fa-leaf"></i></div>
+                    <h5>Science and Environment</h5>
+                    <p>Practical activities, lab safety, and environment projects.</p>
+                    <div class="admin-module-actions">
+                        <a href="#">Edit Plan</a>
+                        <a href="#">Schedule Lab</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="admin-module">
+                    <div class="admin-module-icon is-gold"><i class="fa fa-globe"></i></div>
+                    <h5>Social Studies</h5>
+                    <p>Community history, citizenship, and cultural heritage.</p>
+                    <div class="admin-module-actions">
+                        <a href="#">Edit Plan</a>
+                        <a href="#">Plan Visit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="admin-module">
+                    <div class="admin-module-icon is-blue"><i class="fa fa-music"></i></div>
+                    <h5>Creative Arts</h5>
+                    <p>Music, dance, drama, and visual arts showcases.</p>
+                    <div class="admin-module-actions">
+                        <a href="#">Edit Plan</a>
+                        <a href="#">Book Venue</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="admin-module">
+                    <div class="admin-module-icon is-pink"><i class="fa fa-heart"></i></div>
+                    <h5>Religion and Values</h5>
+                    <p>Faith formation, service, and character formation goals.</p>
+                    <div class="admin-module-actions">
+                        <a href="#">Edit Plan</a>
+                        <a href="#">Share Reflection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="curriculum">
+            <div class="col-lg-7">
+                <div class="admin-card mt-30">
+                    <div class="admin-card-head">
+                        <h4>Assessment Calendar</h4>
+                        <span class="admin-pill"><i class="fa fa-calendar"></i> Term 1</span>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Assessment</th>
+                                    <th>Class</th>
+                                    <th>Date</th>
+                                    <th>Owner</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Literacy Checkpoint</td>
+                                    <td>P.3</td>
+                                    <td>Mar 24</td>
+                                    <td>Academic Team</td>
+                                </tr>
+                                <tr>
+                                    <td>Numeracy Drill</td>
+                                    <td>P.2</td>
+                                    <td>Mar 26</td>
+                                    <td>Math Lead</td>
+                                </tr>
+                                <tr>
+                                    <td>Science Practical</td>
+                                    <td>P.5</td>
+                                    <td>Mar 29</td>
+                                    <td>Science Dept</td>
+                                </tr>
+                                <tr>
+                                    <td>Social Studies Quiz</td>
+                                    <td>P.4</td>
+                                    <td>Apr 02</td>
+                                    <td>Class Teachers</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="admin-card mt-30">
+                    <h4>Curriculum Update</h4>
+                    <form class="admin-form">
+                        <input class="admin-input" type="text" placeholder="Update title">
+                        <select class="admin-select">
+                            <option>Learning area</option>
+                            <option>Literacy</option>
+                            <option>Numeracy</option>
+                            <option>Science</option>
+                            <option>Social Studies</option>
+                            <option>Creative Arts</option>
+                        </select>
+                        <textarea class="admin-textarea" placeholder="Summary of changes"></textarea>
+                    </form>
+                    <div class="admin-hero-actions">
+                        <a href="#" class="main-btn">Publish Update</a>
+                        <a href="#" class="main-btn main-btn--outline">Save Draft</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== ADMIN LEARNING AREAS PART ENDS ======-->
    
     <!--====== FOOTER PART START ======-->
     

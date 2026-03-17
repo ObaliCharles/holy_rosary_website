@@ -42,34 +42,80 @@ $(function() {
     }
 });
 
-// Profile login spinner (vanilla JS)
-document.addEventListener('DOMContentLoaded', function () {
+// Profile login / logout (vanilla JS)
+(function () {
+    var LOGIN_KEY = 'hrps_admin_logged_in';
     var profileLinks = document.querySelectorAll('.profile-login');
-    if (!profileLinks.length) {
-        return;
+    var loginForm = document.querySelector('.login-form');
+
+    function isLoggedIn() {
+        return localStorage.getItem(LOGIN_KEY) === 'true';
     }
 
-    profileLinks.forEach(function (link) {
-        link.addEventListener('click', function (event) {
-            if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) {
-                return;
-            }
+    function setLoggedIn(value) {
+        localStorage.setItem(LOGIN_KEY, value ? 'true' : 'false');
+    }
 
-            event.preventDefault();
+    function updateProfileLink(link) {
+        if (!link.dataset.loginHtml) {
+            link.dataset.loginHtml = link.innerHTML;
+        }
 
-            if (link.classList.contains('is-spinning')) {
-                return;
-            }
+        if (isLoggedIn()) {
+            link.classList.add('profile-logout');
+            link.classList.remove('is-spinning');
+            link.setAttribute('aria-label', 'Logout');
+            link.setAttribute('href', 'login.html');
+            link.innerHTML = '<span class="profile-logout__text">Logout</span>';
+        } else {
+            link.classList.remove('profile-logout');
+            link.classList.remove('is-spinning');
+            link.setAttribute('aria-label', 'Login');
+            link.setAttribute('href', 'login.html');
+            link.innerHTML = link.dataset.loginHtml;
+        }
+    }
 
-            link.classList.add('is-spinning');
+    if (profileLinks.length) {
+        profileLinks.forEach(function (link) {
+            updateProfileLink(link);
 
-            var destination = link.getAttribute('href');
-            setTimeout(function () {
-                window.location.href = destination;
-            }, 2000);
+            link.addEventListener('click', function (event) {
+                if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) {
+                    return;
+                }
+
+                if (isLoggedIn()) {
+                    event.preventDefault();
+                    setLoggedIn(false);
+                    window.location.href = link.getAttribute('href') || 'login.html';
+                    return;
+                }
+
+                event.preventDefault();
+
+                if (link.classList.contains('is-spinning')) {
+                    return;
+                }
+
+                link.classList.add('is-spinning');
+
+                var destination = link.getAttribute('href') || 'login.html';
+                setTimeout(function () {
+                    window.location.href = destination;
+                }, 1200);
+            });
         });
-    });
-});
+    }
+
+    if (loginForm) {
+        loginForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            setLoggedIn(true);
+            window.location.href = 'admin-dashboard.html';
+        });
+    }
+})();
     
     
     //===== Mobile Menu

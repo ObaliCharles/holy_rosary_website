@@ -5,11 +5,11 @@
     <!--====== Required meta tags ======-->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="Admin login for Holy Rosary Primary School Gulu. Access study resources management and uploads.">
+    <meta name="description" content="Manage staff profiles, leadership notes, and coaching for Holy Rosary Primary School Gulu.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!--====== Title ======-->
-    <title>Admin Login | Holy Rosary Primary School Gulu</title>
+    <title>Staff and Leadership | Admin Dashboard | Holy Rosary Primary School Gulu</title>
     
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
@@ -200,16 +200,16 @@
    
     <!--====== PAGE BANNER PART START ======-->
     
-    <section id="page-banner" class="pt-105 pb-130 bg_cover" data-overlay="8" style="background-image: url(images/page-banner-4.jpg)">
+    <section id="page-banner" class="pt-105 pb-130 bg_cover" data-overlay="8" style="background-image: url(images/page-banner-2.jpg)">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="page-banner-cont">
-                        <h2>Admin Login</h2>
+                        <h2>Staff and Leadership</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Admin Login</li>
+                                <li class="breadcrumb-item active" aria-current="page">Staff and Leadership</li>
                             </ol>
                         </nav>
                     </div>  <!-- page banner cont -->
@@ -220,56 +220,158 @@
     
     <!--====== PAGE BANNER PART ENDS ======-->
 
-    <!--====== LOGIN PART START ======-->
-    
-    <section id="login-page" class="pt-90 pb-120 gray-bg login-page">
-        <div class="container">
-            <div class="row align-items-stretch">
-                <div class="col-lg-6">
-                    <div class="login-panel mt-30">
-                        <h3>Admin Resource Access</h3>
-                        <p>Manage study resources, upload past papers, and keep homework packs ready for every learner.</p>
-                        <ul class="login-list">
-                            <li><i class="fa fa-cloud-upload"></i> Upload new past papers and revision packs.</li>
-                            <li><i class="fa fa-folder-open"></i> Organize files by class and term.</li>
-                            <li><i class="fa fa-shield"></i> Protect content with admin-only access.</li>
-                        </ul>
-                        <div class="login-help">
-                            <p><strong>Need admin access?</strong> Contact the Headteacher or ICT officer for credentials.</p>
-                            <p>Phone: +256 772 123 456</p>
-                            <p>Email: admin@holyrosarygulu.org</p>
-                        </div>
+    <!--====== ADMIN STAFF PART START ======-->
+<section id="admin-staff" class="pt-70 pb-120 gray-bg admin-dashboard">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="admin-page-head">
+                    <div>
+                        <h3>Staff and Leadership</h3>
+                        <p>Keep staff profiles current, track coaching sessions, and assign term responsibilities.</p>
+                    </div>
+                    <div class="admin-filters">
+                        <span class="admin-filter is-active">All Teams</span>
+                        <span class="admin-filter">Teaching</span>
+                        <span class="admin-filter">Support</span>
+                        <span class="admin-filter">Leadership</span>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="login-card mt-30">
-                        <h4>Admin Sign In</h4>
-                        <p>Enter your email and password to access the resource dashboard.</p>
-                        <form class="login-form" action="#" method="post">
-                            <div class="singel-form form-group">
-                                <input type="email" placeholder="Email address" required="required">
-                            </div>
-                            <div class="singel-form form-group">
-                                <input type="password" placeholder="Password" required="required">
-                            </div>
-                            <div class="singel-form">
-                                <button type="submit" class="main-btn">Login</button>
-                            </div>
-                        </form>
-                        <div class="login-note">
-                            <strong>Note:</strong> This login is only for admin users.
-                        </div>
-                        <div class="login-links">
-                            <div><a href="admin-dashboard.html">Open Admin Dashboard</a></div>
-                            <div>Not an admin? <a href="index.html">Go to Home</a></div>
-                        </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="admin-card admin-stat mt-30">
+                    <div class="admin-stat-icon is-blue"><i class="fa fa-users"></i></div>
+                    <div class="admin-stat-body">
+                        <span>Total Staff</span>
+                        <h3>58</h3>
+                        <p><i class="fa fa-arrow-up"></i> +2 this term</p>
                     </div>
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-    
-    <!--====== LOGIN PART ENDS ======-->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="admin-card admin-stat mt-30">
+                    <div class="admin-stat-icon is-green"><i class="fa fa-graduation-cap"></i></div>
+                    <div class="admin-stat-body">
+                        <span>Coaching Sessions</span>
+                        <h3>26</h3>
+                        <p><i class="fa fa-calendar"></i> 8 planned</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="admin-card admin-stat mt-30">
+                    <div class="admin-stat-icon is-pink"><i class="fa fa-star"></i></div>
+                    <div class="admin-stat-body">
+                        <span>Leadership Notes</span>
+                        <h3>12</h3>
+                        <p><i class="fa fa-file-text-o"></i> 5 to review</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="admin-card admin-stat mt-30">
+                    <div class="admin-stat-icon is-gold"><i class="fa fa-briefcase"></i></div>
+                    <div class="admin-stat-body">
+                        <span>Open Roles</span>
+                        <h3>3</h3>
+                        <p><i class="fa fa-clock-o"></i> Interviews pending</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="admin-card mt-30">
+                    <div class="admin-card-head">
+                        <h4>Staff Directory</h4>
+                        <a class="admin-link" href="#">Export list</a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Role</th>
+                                    <th>Team</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Jane Acan</td>
+                                    <td>Headteacher</td>
+                                    <td>Leadership</td>
+                                    <td><span class="admin-badge admin-badge--success">Active</span></td>
+                                    <td class="admin-table-actions">
+                                        <a href="#">Profile</a>
+                                        <a href="#">Notes</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Patrick O.</td>
+                                    <td>Academic Lead</td>
+                                    <td>Teaching</td>
+                                    <td><span class="admin-badge admin-badge--primary">Active</span></td>
+                                    <td class="admin-table-actions">
+                                        <a href="#">Profile</a>
+                                        <a href="#">Assign</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Susan L.</td>
+                                    <td>Class Teacher</td>
+                                    <td>P.5</td>
+                                    <td><span class="admin-badge admin-badge--warning">On Leave</span></td>
+                                    <td class="admin-table-actions">
+                                        <a href="#">Cover</a>
+                                        <a href="#">Message</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Peter K.</td>
+                                    <td>Administrator</td>
+                                    <td>Support</td>
+                                    <td><span class="admin-badge admin-badge--info">Active</span></td>
+                                    <td class="admin-table-actions">
+                                        <a href="#">Profile</a>
+                                        <a href="#">Tasks</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4" id="leadership">
+                <div class="admin-card mt-30">
+                    <h4>Add Staff Profile</h4>
+                    <form class="admin-form">
+                        <input class="admin-input" type="text" placeholder="Full name">
+                        <input class="admin-input" type="text" placeholder="Role">
+                        <select class="admin-select">
+                            <option>Team</option>
+                            <option>Leadership</option>
+                            <option>Teaching</option>
+                            <option>Support</option>
+                        </select>
+                        <input class="admin-input" type="text" placeholder="Email or phone">
+                        <textarea class="admin-textarea" placeholder="Notes"></textarea>
+                    </form>
+                    <div class="admin-hero-actions">
+                        <a href="#" class="main-btn">Save Profile</a>
+                        <a href="#" class="main-btn main-btn--outline">Assign Mentor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== ADMIN STAFF PART ENDS ======-->
    
     <!--====== FOOTER PART START ======-->
     

@@ -5,11 +5,11 @@
     <!--====== Required meta tags ======-->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="Admin login for Holy Rosary Primary School Gulu. Access study resources management and uploads.">
+    <meta name="description" content="Manage admissions, approvals, interviews, and enrollment records for Holy Rosary Primary School Gulu.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!--====== Title ======-->
-    <title>Admin Login | Holy Rosary Primary School Gulu</title>
+    <title>Admissions | Admin Dashboard | Holy Rosary Primary School Gulu</title>
     
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
@@ -200,16 +200,16 @@
    
     <!--====== PAGE BANNER PART START ======-->
     
-    <section id="page-banner" class="pt-105 pb-130 bg_cover" data-overlay="8" style="background-image: url(images/page-banner-4.jpg)">
+    <section id="page-banner" class="pt-105 pb-130 bg_cover" data-overlay="8" style="background-image: url(images/page-banner-2.jpg)">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="page-banner-cont">
-                        <h2>Admin Login</h2>
+                        <h2>Admissions</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Admin Login</li>
+                                <li class="breadcrumb-item active" aria-current="page">Admissions</li>
                             </ol>
                         </nav>
                     </div>  <!-- page banner cont -->
@@ -220,56 +220,163 @@
     
     <!--====== PAGE BANNER PART ENDS ======-->
 
-    <!--====== LOGIN PART START ======-->
-    
-    <section id="login-page" class="pt-90 pb-120 gray-bg login-page">
-        <div class="container">
-            <div class="row align-items-stretch">
-                <div class="col-lg-6">
-                    <div class="login-panel mt-30">
-                        <h3>Admin Resource Access</h3>
-                        <p>Manage study resources, upload past papers, and keep homework packs ready for every learner.</p>
-                        <ul class="login-list">
-                            <li><i class="fa fa-cloud-upload"></i> Upload new past papers and revision packs.</li>
-                            <li><i class="fa fa-folder-open"></i> Organize files by class and term.</li>
-                            <li><i class="fa fa-shield"></i> Protect content with admin-only access.</li>
-                        </ul>
-                        <div class="login-help">
-                            <p><strong>Need admin access?</strong> Contact the Headteacher or ICT officer for credentials.</p>
-                            <p>Phone: +256 772 123 456</p>
-                            <p>Email: admin@holyrosarygulu.org</p>
-                        </div>
+    <!--====== ADMIN ADMISSIONS PART START ======-->
+<section id="admin-admissions" class="pt-70 pb-120 gray-bg admin-dashboard">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="admin-page-head">
+                    <div>
+                        <h3>Admissions Pipeline</h3>
+                        <p>Track new applications, request missing documents, and confirm enrollment in one view.</p>
+                    </div>
+                    <div class="admin-filters">
+                        <span class="admin-filter is-active">All</span>
+                        <span class="admin-filter">New</span>
+                        <span class="admin-filter">Documents</span>
+                        <span class="admin-filter">Interview</span>
+                        <span class="admin-filter">Approved</span>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="login-card mt-30">
-                        <h4>Admin Sign In</h4>
-                        <p>Enter your email and password to access the resource dashboard.</p>
-                        <form class="login-form" action="#" method="post">
-                            <div class="singel-form form-group">
-                                <input type="email" placeholder="Email address" required="required">
-                            </div>
-                            <div class="singel-form form-group">
-                                <input type="password" placeholder="Password" required="required">
-                            </div>
-                            <div class="singel-form">
-                                <button type="submit" class="main-btn">Login</button>
-                            </div>
-                        </form>
-                        <div class="login-note">
-                            <strong>Note:</strong> This login is only for admin users.
-                        </div>
-                        <div class="login-links">
-                            <div><a href="admin-dashboard.html">Open Admin Dashboard</a></div>
-                            <div>Not an admin? <a href="index.html">Go to Home</a></div>
-                        </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="admin-card admin-stat mt-30">
+                    <div class="admin-stat-icon is-blue"><i class="fa fa-id-card"></i></div>
+                    <div class="admin-stat-body">
+                        <span>Applications</span>
+                        <h3>94</h3>
+                        <p><i class="fa fa-arrow-up"></i> +12 this week</p>
                     </div>
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-    
-    <!--====== LOGIN PART ENDS ======-->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="admin-card admin-stat mt-30">
+                    <div class="admin-stat-icon is-gold"><i class="fa fa-file-text-o"></i></div>
+                    <div class="admin-stat-body">
+                        <span>Missing Docs</span>
+                        <h3>18</h3>
+                        <p><i class="fa fa-clock-o"></i> 6 older than 7 days</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="admin-card admin-stat mt-30">
+                    <div class="admin-stat-icon is-pink"><i class="fa fa-comments"></i></div>
+                    <div class="admin-stat-body">
+                        <span>Interviews</span>
+                        <h3>22</h3>
+                        <p><i class="fa fa-calendar"></i> Next: Mar 22</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="admin-card admin-stat mt-30">
+                    <div class="admin-stat-icon is-green"><i class="fa fa-check-circle"></i></div>
+                    <div class="admin-stat-body">
+                        <span>Approved</span>
+                        <h3>54</h3>
+                        <p><i class="fa fa-flag"></i> 10 awaiting fees</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="admin-card mt-30">
+                    <div class="admin-card-head">
+                        <h4>Application Queue</h4>
+                        <a class="admin-link" href="files/holy-rosary-admission-form.pdf">Download Form</a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Learner</th>
+                                    <th>Class</th>
+                                    <th>Status</th>
+                                    <th>Assigned</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Grace A.</td>
+                                    <td>P.3</td>
+                                    <td><span class="admin-badge admin-badge--warning">Documents</span></td>
+                                    <td>Records</td>
+                                    <td class="admin-table-actions">
+                                        <a href="#">Review</a>
+                                        <a href="#">Request</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Peter O.</td>
+                                    <td>P.1</td>
+                                    <td><span class="admin-badge admin-badge--info">Interview</span></td>
+                                    <td>Admissions</td>
+                                    <td class="admin-table-actions">
+                                        <a href="#">Schedule</a>
+                                        <a href="#">Notify</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Mary A.</td>
+                                    <td>P.4</td>
+                                    <td><span class="admin-badge admin-badge--success">Approved</span></td>
+                                    <td>Headteacher</td>
+                                    <td class="admin-table-actions">
+                                        <a href="#">Enroll</a>
+                                        <a href="#">Invoice</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>James L.</td>
+                                    <td>P.6</td>
+                                    <td><span class="admin-badge admin-badge--primary">Assessment</span></td>
+                                    <td>Academics</td>
+                                    <td class="admin-table-actions">
+                                        <a href="#">Record</a>
+                                        <a href="#">Update</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="admin-card mt-30">
+                    <h4>New Admission</h4>
+                    <form class="admin-form">
+                        <input class="admin-input" type="text" placeholder="Learner name">
+                        <select class="admin-select">
+                            <option>Class applying for</option>
+                            <option>P.1</option>
+                            <option>P.2</option>
+                            <option>P.3</option>
+                            <option>P.4</option>
+                            <option>P.5</option>
+                            <option>P.6</option>
+                            <option>P.7</option>
+                        </select>
+                        <input class="admin-input" type="text" placeholder="Guardian name">
+                        <input class="admin-input" type="text" placeholder="Contact phone">
+                        <textarea class="admin-textarea" placeholder="Notes"></textarea>
+                    </form>
+                    <div class="admin-hero-actions">
+                        <a href="#" class="main-btn">Save Admission</a>
+                        <a href="#" class="main-btn main-btn--outline">Send Checklist</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== ADMIN ADMISSIONS PART ENDS ======-->
    
     <!--====== FOOTER PART START ======-->
     
